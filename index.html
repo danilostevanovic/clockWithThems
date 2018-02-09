@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Novogodisnji Sat</title>
+</head>
+
+<body>
+    <!-- Napravite digitalni časovnik koji će da prikazuje trenutno vreme u formatu HH:II ss.
+    Npr. 18:05 33 ako je trenutno vreme 18:05 i 23 sekunde, vreme mora da se menja svake sekunde. -->
+    <section id="tema-background">
+            <div class="tema-div">
+                <form>
+                    <select name="tema" id="tema">
+                        <option value="izaberi">Izaberi Temu</option>
+                        <option value="snow.mp4">Snow</option>
+                        <option value="jelka.mp4">Jelka</option>
+                        <option value="jelka2.mp4">Jelka_2</option>
+                        <option value="space.mp4">Space</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+    <section id="video-pozadina">
+        <div class="video-background">
+            <div class="video-foreground">
+                <video autoplay muted loop id="myVideo">
+                    <source id="source" src="assets/media/space.mp4" type="video/mp4">
+                </video>
+            </div>
+    </section>
+    <section id="novogodisnji">
+        <div id="sat">
+            <div id="items">
+                <div class="okvir">
+                    <p id="dani"></p>Dana</div>
+                <div class="okvir">
+                    <p id="sati"></p>Sati</div>
+                <div class="okvir">
+                    <p id="minuti"></p>Minuta</div>
+                <div class="okvir">
+                    <p id="sekunde"></p>Sekunde</div>
+            </div>
+            <div class="div-dugme">
+                <button id="digitalni-dugme">DIGITALNI</button>
+            </div>
+        </div>
+    </section>
+    <section id='digitalni'>
+        <div id="sat-obicni">
+            <div id="items-obicni">
+                <p id='hours'></p>
+                <p id="seconds" style="font-size:70px;margin-top:62%;"></p>
+            </div>
+            <div class="div-dugme">
+                <button id="novogodisnji-dugme">NOVOGODISNJI</button>
+            </div>
+        </div>
+    </section>
+<script src="assets/scripts/main.js"></script>   
+</body>
+
+</html>
